@@ -91,6 +91,9 @@ button {
   .feature-section {
     padding: 96px 0;
   }
+  .section-team {
+    padding: 96px 0;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -118,18 +121,20 @@ button {
 }
 
 /* Tablet screen */
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .container {
     max-width: 768px;
     padding-left: 16px;
     padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 /* Desktop screen */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1157px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
@@ -430,11 +435,12 @@ button {
   | What are we doing
   |============================
 */
-@media (min-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 1157px) {
   .section-pic {
     display: none;
   }
 }
+
 .section-pic {
   padding-bottom: 120px;
 }
@@ -467,7 +473,9 @@ button {
   .team {
     display: flex;
     flex-direction: column;
+    gap: 72px;
     row-gap: 72px;
+    align-items: center;
   }
 
   .team-card {
@@ -477,14 +485,20 @@ button {
     border-radius: 0px 0px 4px 4px;
   }
 
-  .card-container {
-    padding: 0 82px;
+  .section-team {
+    padding: 96px 0;
   }
+
+  /* .card-container {
+    padding: 0 82px;
+  } */
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   .team {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
   }
   .team-card {
@@ -492,11 +506,13 @@ button {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
       0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    width: calc((100% - 48px) / 2);
+  }
+  .section-team {
+    padding: 96px 0;
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1157px) {
   .team {
     display: flex;
     gap: 24px;
@@ -509,15 +525,14 @@ button {
     border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
   }
+  .section-team {
+    background-color: #f4f4fd;
+    padding: 120px 0;
+  }
 }
 
 .title {
   margin-bottom: 72px;
-}
-
-.section-team {
-  background-color: #f4f4fd;
-  padding: 120px 0;
 }
 
 .team-title {
@@ -579,20 +594,56 @@ button {
   |Customers
   |============================
 */
+@media only screen and (max-width: 767px) {
+  .clients-item {
+    width: 190px;
+    height: 88px;
+    width: calc((100% - 48px) / 2);
+  }
 
-.section-clients {
-  padding: 120px 0;
+  .clients-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .section-clients {
+    padding: 96px 0;
+  }
 }
 
-.clients-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
+@media only screen and (min-width: 767px) {
+  .clients-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .clients-item {
+    width: 168px;
+    height: 88px;
+  }
+  .section-clients {
+    padding: 96px 0;
+  }
 }
 
-.clients-item {
-  width: 168px;
-  height: 88px;
+@media only screen and (min-width: 1157px) {
+  .clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .clients-item {
+    width: 168px;
+    height: 88px;
+  }
+  .section-clients {
+    padding: 120px 0;
+  }
 }
 
 .clients-link {
