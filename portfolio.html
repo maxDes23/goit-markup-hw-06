@@ -56,6 +56,15 @@
             </li>
           </ul>
         </address>
+         <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main -->
@@ -299,7 +308,7 @@
                 class="subscribe-form-input"
                 type="email"
                 name="form-email"
-                placeholder="E-mail" 
+                placeholder="E-mail"
               />
             </label>
             <button class="footer-subscribe-btn" type="submit">
@@ -312,5 +321,74 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile-menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li>
+          <a href="./index.html" class="mobile-link link active">Studio</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="mobile-link link">Portfolio</a>
+        </li>
+        <li><a href="" class="mobile-link">Contacts</a></li>
+      </ul>
+
+      <ul class="list mobile-contact">
+        <li>
+          <a class="link mobile-contact-tel" href="tel:+110001111111">
+            +11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="link mobile-contact-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-link-card list">
+        <li class="team-link-card">
+          <a class="team-link" href="" aria-label="Instagram">
+            <svg class="mobile-team-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-link-card">
+          <a class="mobile-team-link" href="" aria-label="Twitter">
+            <svg class="team-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-link-card">
+          <a class="mobile-team-link" href="" aria-label="Fasebooc">
+            <svg class="team-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-link-card">
+          <a class="mobile-team-link" href="" aria-label="Linkedin"
+            ><svg class="team-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
