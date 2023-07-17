@@ -1525,6 +1525,10 @@ button {
   text-decoration: none;
 }
 
+.active {
+  color: var(--ocean);
+}
+
 .mobile-link.active:hover,
 .mobile-link.active:focus {
   color: var(--ocean);
