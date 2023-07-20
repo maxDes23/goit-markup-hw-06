@@ -1075,40 +1075,125 @@ button {
   |  Portfolio
   |============================
 */
+@media only screen and (max-width: 767px) {
+  .btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    margin-bottom: 72px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+  .btn-text {
+    color: var(--color-iris);
+    background-color: #f4f4fd;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    list-style: none;
+    padding: 8px 24px;
+    background: #f4f4fd;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
 
-.section-main {
-  padding: 96px 0 120px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .section-main {
+    padding: 48px 0 48px 0;
+  }
 }
 
-.btn {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+@media only screen and (min-width: 768px) {
+  .btn {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 72px 24px;
+  }
+  .btn-text {
+    color: var(--color-iris);
+    background-color: #f4f4fd;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    list-style: none;
+    padding: 12px 24px;
+    background: #f4f4fd;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .section-main {
+    padding: 64px 0 96px 0;
+  }
+}
+
+@media only screen and (min-width: 1157px) {
+  .btn {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+  }
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+  }
+
+  .card-list {
+    width: calc((100% - 48px) / 3);
+  }
+  .btn-text {
+    color: var(--color-iris);
+    background-color: #f4f4fd;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    list-style: none;
+    padding: 12px 24px;
+    background: #f4f4fd;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .section-main {
+    padding: 100px 0 120px 0;
+  }
 }
 
 .btn-button {
-}
-
-.btn-text {
-  color: var(--color-iris);
-  background-color: #f4f4fd;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  list-style: none;
-  padding: 12px 24px;
-  background: #f4f4fd;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-text:hover,
@@ -1123,17 +1208,6 @@ button {
 .card-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  row-gap: 48px;
-}
-
-.card-list {
-  width: calc((100% - 48px) / 3);
 }
 
 .card-link:hover,
@@ -1175,12 +1249,28 @@ button {
   | Project Card
   |============================
 */
+@media only screen and (max-width: 767px) {
+  .card-top-wrap {
+    position: relative;
+    width: 396px;
+    overflow: hidden;
+  }
+}
 
-.card-top-wrap {
-  position: relative;
-  width: 360px;
-  height: 300px;
-  overflow: hidden;
+@media only screen and (min-width: 768px) {
+  .card-top-wrap {
+    position: relative;
+    width: 356px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1157.98px) {
+  .card-top-wrap {
+    position: relative;
+    width: 360px;
+    overflow: hidden;
+  }
 }
 
 .card-cover-text {
